@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pieces">peças</string>
+    <string name="is_playing">está a jogar</string>
+    <string name="no_available_move">Sem jogadas disponíveis para</string>
+    <string name="play_again">O outro jogador irá jogar novamente</string>
+    <string name="go_back_to_menu">Voltar ao Menu Principal</string>
+    <string name="won_the_game">ganhou o jogo!</string>
+    <string name="player1_name">Nome do player 1</string>
+    <string name="player2_name">Nome do player 2</string>
+    <string name="options">Opções</string>
+    <string name="on_sound">COM sons!</string>
+    <string name="off_sound">SEM sons!</string>
+    <string name="on_music">COM música!</string>
+    <string name="off_music">SEM música!</string>
+    <string name="background_selector">Selecione o fundo do jogo:</string>
+    <string name="about">Sobre</string>
+    <string name="boardSize">Tamanho do tabuleiro:</string>
+    <string name="about_project">Este é um projeto open source, iniciado por Felipe Ribeiro R. Magalhães, e disponível sob a licensa MIT.\n\n  O código fonte pode ser acessado neste repositório git:\nhttps://github.com/FelipeRRM/AndroidReversi</string>
+</resources>

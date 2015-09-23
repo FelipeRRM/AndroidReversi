@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="feliperrm.reversiandroid.Telas.MenuActivity"
+    android:orientation="vertical"
+    android:id="@+id/linearBackgroundLayout"
+    android:animateLayoutChanges="true">
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/reversi_logo"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:id="@+id/logo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:animateLayoutChanges="true">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_height="wrap_content"
+        android:text="Player vs Player"
+        android:id="@+id/btnPvP"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_height="wrap_content"
+        android:text="Player vs IA (EASY)"
+        android:id="@+id/btnPvEasy"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_height="wrap_content"
+        android:text="Player vs IA (HARD)"
+        android:id="@+id/btnPvHard"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_height="wrap_content"
+        android:text="@string/options"
+        android:id="@+id/btnOptions"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_height="wrap_content"
+        android:text="@string/about"
+        android:id="@+id/btnAbout"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

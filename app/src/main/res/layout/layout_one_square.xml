@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feliperrm.reversiandroid.Uteis.SquareFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="64dp"
+    android:layout_height="64dp"
+    >
+
+
+    <ImageView
+        android:padding="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/white_piece"
+        android:id="@+id/player_one_piece"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:padding="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/black_piece"
+        android:id="@+id/player_two_piece"
+        android:visibility="gone"/>
+
+    <TextView
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/debugNumber"
+        android:text="1"
+        android:textColor="#ff3b88c3"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/move_available"
+        android:id="@+id/moveAvailable"/>
+
+
+</feliperrm.reversiandroid.Uteis.SquareFrameLayout>

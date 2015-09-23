@@ -1,0 +1,117 @@
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="feliperrm.reversiandroid.Telas.OpcoesActivity"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:descendantFocusability="beforeDescendants"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_margin="10dp">
+
+                <EditText
+                    android:id="@+id/editTextP1Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/player1_name"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/player1ViewPagerSelector"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"/>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_margin="10dp">
+
+                <EditText
+                    android:id="@+id/editTextP2Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/player2_name"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/player2ViewPagerSelector"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:text="@string/on_sound"
+                    android:layout_margin="15dp"
+                    android:id="@+id/btnSound"/>
+
+                <Button
+                    android:layout_margin="15dp"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:text="@string/on_music"
+                    android:id="@+id/btnMusic"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/background_selector"/>
+
+            <android.support.v4.view.ViewPager
+                android:layout_marginTop="15dp"
+                android:id="@+id/backgroundViewPagerSelector"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+
+            <TextView
+                android:layout_marginTop="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/boardSize"/>
+
+
+            <Spinner
+                android:layout_marginTop="12dp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerBoardSize"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

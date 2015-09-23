@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Game"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:id="@+id/linearBackgroundLayout"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:background="#a0000000"
+        android:elevation="10dp">
+
+        <TextView
+            android:id="@+id/whoIsPlaying"
+            android:layout_margin="10dp"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:text="Player1 is Playing"/>
+
+        <LinearLayout
+            android:gravity="center|right"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/p1Pieces"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player1: 10 Pieces"/>
+
+            <TextView
+                android:id="@+id/p2Pieces"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player2: 10 Pieces"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerView"
+            />
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:id="@+id/frameLayoutAnim"
+            >
+
+            <ImageView
+                android:padding="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/white_piece"
+                android:id="@+id/player_one_piece"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:padding="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/black_piece"
+                android:id="@+id/player_two_piece"
+                android:visibility="gone"
+                />
+
+
+        </FrameLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
